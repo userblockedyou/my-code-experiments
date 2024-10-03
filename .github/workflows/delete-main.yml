@@ -1,0 +1,19 @@
+import requests
+from requests.auth import HTTPBasicAuth
+ 
+url = "https://snehafirangi.atlassian.net/rest/api/3/user"
+ 
+auth = HTTPBasicAuth("snehac@devtools.in", "ATATT3xFfGF0MEC8r7SajylJdLACl1m1xeTkmoQ4Ny4s-xycCFqLUwbDldM9g3qygGaUSbhtqajGxXfK-21j610_tPFtIQsBuMmyN1l2iY00T6wnhry0QQkXKv0hf4VFGkt4tLwUmTmPcezejfz5OezCULfHihCF6zetCVHay18kVBVinRt239Y=9F545ABC")
+ 
+query = {
+  'accountId': '63d0b9bc16dfc2b1fbca756b'
+}
+ 
+response = requests.request(
+   "DELETE",
+   url,
+   params=query,
+   auth=auth
+)
+ 
+print(response.text)
