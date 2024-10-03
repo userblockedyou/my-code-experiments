@@ -20,7 +20,7 @@ jobs:
 
         run: |
 
-          ASSIGNEE="712020:8357fd07-8d72-45e3-bdc7-c03e2f83844d"
+          ASSIGNEE="63d0b9bc16dfc2b1fbca756b"
 
           JIRA_BASE_URL="https://snehafirangi.atlassian.net"
 
